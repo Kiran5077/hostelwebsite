@@ -1,0 +1,38 @@
+.faq{
+  margin-top:100px;
+  text-align: center;
+}
+
+.faqitems{
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
+  width:100%;
+  
+}
+.faqinner{
+  border:2px solid red;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+.faqinner h2{
+  margin: 0px;
+  padding: 10px;
+  background-color: rgb(240, 124, 8);
+  color: antiquewhite;
+  text-align: left;
+  
+}
+.faqinner p{
+  margin: 0px;
+  height: 0px;
+  text-align: left;
+  padding: 0px;
+  transition: 0.5s;
+  transform: scaleY(0);
+}
+.activeAns{
+  height:auto !important;
+  transform: scaleY(1) !important;
+  padding: 10px;
+}

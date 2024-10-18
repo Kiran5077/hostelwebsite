@@ -1,0 +1,28 @@
+.programs{
+    width: 100%;
+    min-height: 95vh;
+    background:url('../../assets/hostel.jpeg');
+    background-position:fixed;
+    background-size:cover;
+    color:rgb(226, 244, 24);
+    display:inline-block;
+    align-items: center;
+    justify-content:flex-start;
+    
+    
+}
+/* Mobile View */
+@media (max-width: 1200px) {
+    .programs {
+      width: 105%;
+      min-height: 100vh;
+      background: url('../../assets/hostel.jpeg');
+      background-position: center;
+      background-size: cover;
+      display: block;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+  }

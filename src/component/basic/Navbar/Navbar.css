@@ -1,7 +1,7 @@
 nav{
     width: 100%;
-    background-color: rgb(227, 192, 16);
-    color:deeppink;
+    background-color: rgb(241, 43, 113);
+    color:rgb(232, 195, 109);
     padding: 4px 0;
     align-items: center;
     justify-content: space-between;
@@ -14,9 +14,12 @@ nav{
 
 }
 .container h2{
-    font-family:'Times New Roman', Times, serif;
-    font-size: xx-large;
+    font-family:Impact, 'Arial Narrow Bold', sans-serif;
+    
+    font-size:xx-large;
     margin-left: 10px;
+    border-bottom:4px solid rgb(31, 33, 29); 
+    border-radius: 30px;
     
 }
 
@@ -24,50 +27,107 @@ nav{
 nav ul li{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display:inline-block;
-    margin:5px 10px;
+    margin:15px 10px;
     font-weight: 700;
-    font-size: 16px;
+    font-size:20px;
     list-style: none;
     border-radius: 20px;
     gap: 30px;
+    color: rgb(55, 5, 76);
 
 }
 .contain:hover{
     transition: .7;
     scale: 1.2;
-    color:deeppink;
-    border-bottom:4px solid rgb(31, 33, 29); ;
+    color:rgb(214, 204, 21);
+    border-bottom:4px solid rgb(10, 10, 10); 
     
 }
 
 .btn{
-    background: rgb(219, 19, 115);
-    color: #e9d7d7;
+   background-color: rgb(63, 215, 20);
+   color:rgb(28, 28, 28);
     padding: 14px 25px;
     font-size:16px;
     border-radius: 30px;
     cursor: pointer;
-    border: solid black ;
+    font-weight: 400;
     outline: 1;
     margin-top: 5px;
-   
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 5px;
     
 
 }
-.btn:hover{
-    color: rgb(202, 189, 202);
-    background-color: rgb(40, 84, 230);
-    border-color: rgb(220, 11, 151);
-    transition: .9s;
-    scale:1.1;
-}
 
+
+.menu-icon{
+    display: none;
+}
 @media (max-width:1200px){
-    .logo{
-        width:70px;
-    }
+  
     nav ul li{
         margin:10px 15px;
+    }
+}
+@media (max-width:1040px){
+    nav{
+        padding:15px 0;
+    }
+    nav ul{
+        position:fixed;
+        top:0;
+        right:0;
+        bottom: 0;
+        background: rgb(241, 43, 113);
+        z-index: -1;
+        width:200px;
+        padding-top: 70px;
+        transition: 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px 40px;
+        border-radius: 30px;
+        transition: .5s;
+    }
+    .menu-icon{
+        display: block;
+        width:30px;
+        cursor: pointer;
+    }
+    .hide-mobile-menu{
+        right:-200px;
+    }
+}
+@media (max-width:440px){
+    nav{
+        padding:15px 0;
+    }
+    nav ul{
+        position:fixed;
+        text-align: center;
+        top:0;
+        right:0;
+        bottom: 0;
+        background: rgb(241, 43, 113);
+        z-index: -1;
+        width: 440px;
+        padding-top: 70px;
+        transition: 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px 40px;
+        border-radius: 30px;
+        transition: .5s;
+    }
+    .menu-icon{
+        display: block;
+        width:30px;
+        cursor: pointer;
+    }
+    .hide-mobile-menu{
+        right:-440px;
     }
 }

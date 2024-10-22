@@ -1,38 +1,24 @@
 import React, { useState } from 'react';
 import './FAQ.css'
 
+  import { Faqs } from './Faqs';
+
 const FAQ = () => {
-  const Faqs = [
-    {
-      id:1,
-      question: 'What is the check-in time?',
-      answer: 'Check-in time is 2 PM. Early check-in is subject to availability.'
-    },
-    {
-      id:2,
-      question: 'What is the cancellation policy?',
-      answer: 'You can cancel your booking up to 24 hours before arrival without any charges.'
-    },
-    {
-      id:3,
-      question: 'Is breakfast included?',
-      answer: 'Yes, breakfast is included in the room rate.'
-    },
-    // Add more FAQs as needed
-  ];
+  let [showAns,setShowAns]=useState(Faqs[0].id)
+
 
 
   return (
     
     <div className="faq">
       <h2>Frequently Asked Questions (FAQs)</h2>
-     <div className="faqitems">
+     <div className="faqitems" id='faq'>
       {
         Faqs.map((faqinner,i)=>{
           return(
             <div className="faqinner">
-                <h2>{faqinner.question}</h2>
-                <p>{faqinner.answer}</p>
+                     <h2 onClick={()=>setShowAns(faqinner.id)}>{faqinner.id}) {faqinner.question}</h2>
+                     <p className={showAns==faqinner.id ?'activeAns' : ''}>{faqinner.answer}</p>
               </div>
             )
            }

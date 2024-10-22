@@ -1,0 +1,11 @@
+.error{
+   margin-top: 300px;
+   text-align: center;
+    align-items: center;
+  font-weight: 700;
+  font-size: xx-large;
+  
+}
+.error h1,h4{
+    font-family:Impact, 'Arial Narrow Bold', sans-serif;
+}

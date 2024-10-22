@@ -2,10 +2,13 @@ import React from 'react'
 import './Contact.css'
 
 const Contact = () => {
+  let Display=()=>{
+    alert("data is sunmited successfully")
+  }
   return (
     <>
-    <div className='Menu'>
-      <h1>Contact</h1>
+    <div className='Menusi'>
+     
       </div>
     <div className='contact'>
         <div className='contact-col'>
@@ -34,7 +37,7 @@ const Contact = () => {
        required/>
        <label>write message here</label>
        <textarea name="message"  cols="30" rows="10" placeholder='enter your message' required></textarea>
-       <button type='submit' className='btn dark-btn'>Submit now </button>
+       <button type='submit' className='btn dark-btn' onClick={Display}>Submit now </button>
         </form>
         <span></span>
       </div>

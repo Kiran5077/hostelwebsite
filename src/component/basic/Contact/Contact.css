@@ -1,3 +1,12 @@
+
+.Menusi{
+    margin-top:60px;
+    height:20vh;
+    background: url('https://th.bing.com/th/id/R.1966e20cbd287dec1b622b719f5b4780?rik=9ZPFQ0lhqYdcfg&riu=http%3a%2f%2fdnhspinners.com%2fImages%2fContactUs.png&ehk=hT8HgCr%2ff1oCOC1b6MzLORYwv4WCrCCecrQJIS8L07Q%3d&risl=&pid=ImgRaw&r=0');
+    background-position:center;
+background-size:cover;
+    
+  }
 .contact{
     margin:80px auto;
     max-width:90%;
@@ -5,6 +14,7 @@
     align-items: center;
     
     justify-content: space-between;
+    
 }
 .contact h1{
   

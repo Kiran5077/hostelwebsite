@@ -3,11 +3,11 @@ import './About.css'
 const About = () => {
   return (
     <>
-    <div className='Menu'>
-      <h1>About</h1>
-      </div>
+    <div className='Menuss'>
+    </div>
+      
     
-    <div className='about'>
+    <div className='about' id="about">
       <div className='about-left'>
         <img src="/assets/inter.jpeg" alt='' className='about-img'/>
     </div>
@@ -23,7 +23,7 @@ const About = () => {
       
     </div>
     </div>
-    <div className='About'>
+    <div className='About' id="about">
     <div className='About-left'>
        <h3>ABOUT STAYZONE</h3>
        <p>"Stayzone's rooms blend comfort and functionality. Dorms feature bunk beds with lockers and soft linens,
@@ -40,7 +40,7 @@ const About = () => {
         </p>
       
     </div>
-    <div className='about-right'>
+    <div className='about-right' id="about">
         <img src="/assets/room3.jpeg" alt='' className='about-img'/>
     </div>
     </div>

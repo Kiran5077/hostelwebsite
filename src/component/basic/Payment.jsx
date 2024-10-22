@@ -1,21 +1,33 @@
+// src/Payment.jsx
 import React from 'react';
 
-const Payment = () => {
+
+const Payment = ({ bookingDetails }) => {
+  const handlePayment = (e) => {
+    e.preventDefault();
+    alert('Payment Successful!');
+  };
+
   return (
-    <div>
+    <div className="payment-container">
       <h1>Payment</h1>
-      <form>
-        <label for="amount">Amount:</label>
-        <input type="number" id="amount" />
-        <br />
-        <label for="payment-method">Payment Method:</label>
-        <select id="payment-method">
-          <option value="online-banking">Online Banking</option>
-          <option value="credit-card">Credit Card</option>
-          <option value="debit-card">Debit Card</option>
-        </select>
-        <br />
-        <button type="submit">Pay</button>
+      <p>Room Type: {bookingDetails.roomType}</p>
+      <p>Check-in: {bookingDetails.checkInDate}</p>
+      <p>Check-out: {bookingDetails.checkOutDate}</p>
+      <form onSubmit={handlePayment}>
+        <label>
+          Card Number:
+          <input type="text" required />
+        </label>
+        <label>
+          Expiry Date:
+          <input type="text" required />
+        </label>
+        <label>
+          CVV:
+          <input type="text" required />
+        </label>
+        <button type="submit">Pay Now</button>
       </form>
     </div>
   );

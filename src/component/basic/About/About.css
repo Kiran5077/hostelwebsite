@@ -1,3 +1,13 @@
+
+    .Menuss{
+        margin-top:60px;
+        height:20vh;
+        background-color: blue;
+        background: url('https://www.plannernet.com/wp-content/uploads/2022/01/Preview-Pictures-for-Web-Pages.png');
+        background-position:center;
+    background-size:cover;
+        
+      }
 .about{
     margin:100px auto;
     display:flex;
@@ -14,7 +24,7 @@
 
 }
 .About-right{
-    flex-basis: 40%;
+    flex-basis:40%;
 }
 .about-img{
     width:100%;
@@ -22,14 +32,7 @@
     margin-left: 12px;
     
 }
-.play-icon{
-    width:60px;
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    cursor: pointer;
-}
+
 .About-right h3{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-left: 40px;
@@ -58,19 +61,19 @@
 
 }
 .About-left{
-    flex-basis:40%;
+    flex-basis:70%;
 
 }
 .about-right{
     
-    flex-basis: 40%;
+    flex-basis:50%;
     position: relative;
 }
-.About p{
+.About-left p{
     font-size: large;
     font-weight: 600;
       margin: 20px 50px;
-      max-width:400px;
+      max-width:500px;
       margin-bottom:15px
   
   }
@@ -95,4 +98,25 @@
     .About-right{
         flex-basis: 100%;
     }
+    .About{
+        flex-direction: column;
+    }
+    .about-right{
+        flex-basis:100%;
+        margin: 20px;
+        order: 2;
+       margin-left: 30px;
+    }
+    .About-left{
+        flex-basis:100%;
+    }
+    .about-img{
+        justify-content: center;
+        align-items: center;
+        width:50%;
+        border-radius:3px;
+        margin-left: 12px;
+        
+    }
+
 }

@@ -1,15 +1,19 @@
 import React from 'react'
 import './Home.css'
+
 import { Link } from 'react-router-dom'
 import Footer from '../Footer/Footer'
 import FAQ from '../FAQ/FAQ'
 
+
+
+
 const Home = () => {
   return (
     <>
-    <div className='programing'>
+    <div className='programing' id='hero'>
         
-        
+    
         <div className='home'>
         <h1>Welcome to the StayZone</h1>
             <p>"Your home away from home,where memories are made and travelers become family."</p>
@@ -19,49 +23,13 @@ const Home = () => {
            
         </div>
         </div>
-        <div className='Search'>
-          <form>
-          <div className='containe'>
-            
-            <label htmlFor=''>guest</label>
-            <input type="number" placeholder="how many people stay" required/>
-          </div>
-          <div className='containe'>
-            <label htmlFor=''>Check In</label>
-            <input type="date" placeholder="check in"
-            required/>
-          </div>
-          <div className='containe'>
-            <label htmlFor=''>Check Out</label>
-            <input type="date" placeholder="check out"
-            required/>
-          </div>
-          <div className='containe'>
-            <label htmlFor=''>Room Type</label>
-            <input type="text" placeholder="choose room"
-            required/>
-          </div>
-          <div className='containe'>
-            <label htmlFor=''>price</label>
-            <input type="range" min="0"  max="100"
-            required/>
-          </div>
-          <select className='pics' >
-            <option>choose an option</option>
-            <option>AC</option>
-            <option>non Ac</option>
-
-          </select>
-          
-          <button  type="submit" className='btn'>book now</button>
-          </form>
-        </div>
+        
        
       
       <div className='Menus'>
         <h1> Services</h1>
       </div>
-      <div className='Menuitem'>
+      <div className='Menuitem' id='hero'>
         <div className='pic'>
           <img src="/assets/rooms.jpeg" alt=""/>
         <h1>Furnished Rooms</h1>
@@ -87,6 +55,7 @@ const Home = () => {
         <button className='btn'>enquire now</button>
       </div>
       </div>
+      
      <FAQ/>
       </>
     

@@ -85,38 +85,33 @@
    
     
 }
-@media (max-width:900px) {
-    .about{
-        flex-direction: column;
-    }
-    .about-left{
-        flex-basis: 100%;
-        margin: 20px;
-        order: 2;
-        margin-left: 12px;
-    }
-    .About-right{
-        flex-basis: 100%;
-    }
-    .About{
-        flex-direction: column;
-    }
-    .about-right{
-        flex-basis:100%;
-        margin: 20px;
-        order: 2;
-       margin-left: 30px;
-    }
-    .About-left{
-        flex-basis:100%;
-    }
-    .about-img{
-        justify-content: center;
-        align-items: center;
-        width:50%;
-        border-radius:3px;
-        margin-left: 12px;
-        
+@media (max-width: 768px) {
+    .about, .About {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center items */
     }
 
+    .about-left, .About-left, .about-right, .About-right {
+        flex-basis: 100%; /* Full width on smaller screens */
+        margin: 0; /* Remove margins */
+        text-align: center; /* Center text */
+    }
+
+    .About-right h3 {
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .About-left p {
+        margin: 20px 10px; /* Adjust margins for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .about p, .About-left p {
+        font-size: medium; /* Smaller font size on very small screens */
+    }
+
+    .About-right h3 {
+        font-size: 24px; /* Smaller heading size */
+    }
 }

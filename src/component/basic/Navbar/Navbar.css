@@ -13,7 +13,7 @@ nav{
     height: 60px;
 
 }
-.container h2{
+.navbar h2{
     font-family:Impact, 'Arial Narrow Bold', sans-serif;
     
     font-size:xx-large;
@@ -36,7 +36,7 @@ nav ul li{
     color: rgb(55, 5, 76);
 
 }
-.contain:hover{
+.navitem:hover{
     transition: .7;
     scale: 1.2;
     color:rgb(214, 204, 21);
@@ -63,6 +63,7 @@ nav ul li{
 
 .menu-icon{
     display: none;
+    margin-right: 20px;
 }
 @media (max-width:1200px){
   
@@ -78,7 +79,8 @@ nav ul li{
         position:fixed;
         top:0;
         right:0;
-        bottom: 0;
+        
+        height: 900px;
         background: rgb(241, 43, 113);
         z-index: -1;
         width:200px;
@@ -97,7 +99,7 @@ nav ul li{
         cursor: pointer;
     }
     .hide-mobile-menu{
-        right:-200px;
+        right:-300px;
     }
 }
 @media (max-width:440px){
@@ -128,6 +130,6 @@ nav ul li{
         cursor: pointer;
     }
     .hide-mobile-menu{
-        right:-440px;
+        right:-540px;
     }
 }

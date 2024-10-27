@@ -40,3 +40,35 @@
   transform: scaleY(1) !important;
   padding: 10px;
 }
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .faqinner h2 {
+    font-size: 1.5em; /* Adjust font size for medium screens */
+  }
+
+  .faqinner p {
+    font-size: large; /* Slightly smaller text */
+  }
+}
+
+@media (max-width: 900px) {
+  .faqinner h2 {
+    font-size: 1.2em; /* Further reduce font size */
+  }
+
+  .faqinner p {
+    font-size: medium; /* Adjust text size for readability */
+  }
+}
+
+@media (max-width: 600px) {
+  .faqinner h2 {
+    font-size: 1em; /* Smaller font for mobile */
+    height: auto; /* Allow height to adjust */
+  }
+
+  .faqinner p {
+    font-size: small; /* Smaller text for mobile */
+    margin-top: 20px; /* Reduce margin for better spacing */
+  }
+}

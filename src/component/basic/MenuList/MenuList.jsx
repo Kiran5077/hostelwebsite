@@ -1,5 +1,6 @@
 import React from 'react'
 import './MenuList.css'
+import Footer from '../Footer/Footer'
 
 
 
@@ -179,7 +180,7 @@ const MenuList = () => {
         <button className='btn'>Add to Cart </button>
       </div>
       </div>
-      
+      <Footer/>
     </>
   )
 }

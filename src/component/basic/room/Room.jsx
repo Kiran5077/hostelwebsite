@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import './Room.css'
 import { Link } from 'react-router-dom';
+import Footer from '../Footer/Footer';
 
 
 
@@ -92,7 +93,7 @@ const Room = () => {
           </div>
         ))}
       </div>
-  
+  <Footer/>
        
     </>
   );

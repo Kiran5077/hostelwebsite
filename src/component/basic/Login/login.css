@@ -90,3 +90,62 @@ body{
     background: #EAEA;
     color: #676767;
 }
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .containers {
+      width: 80%; /* Adjust width for medium screens */
+    }
+  
+    .input {
+      width: 80%; /* Adjust input width */
+    }
+  
+    .input input {
+      width: 70%; /* Adjust input field width */
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .containers {
+      width: 80%; /* Further adjust width for smaller screens */
+    }
+  
+    .input {
+      width: 90%; /* Adjust input width */
+    }
+  
+    .input input {
+      width: 80%; /* Adjust input field width */
+    }
+  
+    .submit {
+      width: 180px; /* Adjust submit button width */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .containers {
+     
+      width: 95%; /* Adjust width for mobile screens */
+      margin-top: 200px; /* Adjust margin for better spacing */
+    }
+  
+    .input {
+      width: 95%; /* Adjust input width */
+      height: 60px; /* Adjust input height */
+    }
+  
+    .input input {
+      width: 90%; /* Adjust input field width */
+      height: 40px; /* Adjust input field height */
+    }
+  
+    .submit {
+      width: 150px; /* Adjust submit button width */
+      height: 50px; /* Adjust submit button height */
+    }
+  
+    .forgot-passward {
+      padding-left: 20px; /* Adjust padding for better spacing */
+    }
+  }

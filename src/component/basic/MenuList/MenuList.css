@@ -37,3 +37,29 @@ border: 2px solid rgb(131, 19, 67);
   scale: 1.1;
   transition: 0.6s;
 }
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .Menuitem {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .Menuitem {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .Menuitem {
+    grid-template-columns: 1fr; /* Stacks items vertically */
+  }
+
+  .pic {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .pic p {
+    font-size: 16px; /* Smaller text for mobile */
+  }
+}

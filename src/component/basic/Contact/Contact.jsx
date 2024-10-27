@@ -1,5 +1,6 @@
 import React from 'react'
 import './Contact.css'
+import Footer from '../Footer/Footer'
 
 const Contact = () => {
   let Display=()=>{
@@ -42,6 +43,7 @@ const Contact = () => {
         <span></span>
       </div>
     </div>
+    <Footer/>
     </>
   )
 }

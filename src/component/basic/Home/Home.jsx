@@ -4,6 +4,8 @@ import './Home.css'
 import { Link } from 'react-router-dom'
 import Footer from '../Footer/Footer'
 import FAQ from '../FAQ/FAQ'
+import Testimonial from '../../Testinomial/Testimonial'
+import Program from '../Program/Program'
 
 
 
@@ -55,8 +57,10 @@ const Home = () => {
         <button className='btn'>enquire now</button>
       </div>
       </div>
-      
+      <Testimonial/>
      <FAQ/>
+     <Program/>
+     <Footer/>
       </>
     
   )

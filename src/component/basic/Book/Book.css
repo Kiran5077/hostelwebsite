@@ -38,5 +38,37 @@
 .modalOverLay form label{
 margin-left: 30px;
 }
+@media (max-width: 768px) {
+    .Modaldiv {
+        width: 90%; /* Adjust width for medium screens */
+        height: 70vh; /* Adjust height for medium screens */
+    }
+
+    .modalOverLay form input {
+        width: 80%; /* Maintain width for medium screens */
+        margin-left: 10px; /* Adjust margin for medium screens */
+    }
+
+    .modalOverLay form label {
+        margin-left: 10px; /* Adjust margin for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .Modaldiv {
+        width: 95%; /* Adjust width for small screens */
+        height: 70vh; /* Adjust height for small screens */
+    }
+
+    .modalOverLay form input {
+        width: 90%; /* Adjust width for small screens */
+        margin-left: 5px; /* Adjust margin for small screens */
+    }
+
+    .modalOverLay form label {
+        margin-left: 5px; /* Adjust margin for small screens */
+    }
+}
+
 
 
